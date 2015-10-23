@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.acv.cheerz.view.RoundImageView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp" >
+
+        <!-- row top1 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:id="@+id/rk_ll_top1_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/backround_retangle"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rk_rl_icontop1_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/rk_icon_artist_1_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/artist_temp" />
+
+                    <ImageView
+                        android:id="@+id/rk_img_shadow_top_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/shadow_top" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/circle_1" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="1"
+                            android:textSize="@dimen/text_size" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rk_row1_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/rk_icon_artist_1_id" >
+
+                        <TextView
+                            android:id="@+id/txt_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/fan_ranking"
+                            android:textSize="@dimen/title_size" />
+
+                        <com.acv.cheerz.view.RoundImageView
+                            android:id="@+id/rk_iconfan11_id"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_toRightOf="@+id/txt_id"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/artist_temp"
+                            android:layout_marginLeft="20dp"
+                            >
+                        </com.acv.cheerz.view.RoundImageView>
+                        <com.acv.cheerz.view.RoundImageView
+                            android:id="@+id/rk_iconfan12_id"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_toRightOf="@+id/rk_iconfan11_id"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/artist_temp"
+                            >
+                        </com.acv.cheerz.view.RoundImageView>
+                        <com.acv.cheerz.view.RoundImageView
+                            android:id="@+id/rk_iconfan13_id"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_toRightOf="@+id/rk_iconfan12_id"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/artist_temp"
+                            >
+                        </com.acv.cheerz.view.RoundImageView>
+                        
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_above="@+id/rk_row1_id"
+                        android:background="@drawable/shadow" >
+
+                        <TextView
+                            android:id="@+id/rk_txtName1_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:singleLine="true"
+                            android:text="はるはてのう"
+                            android:textColor="@color/ebe7ef"
+                            android:textSize="@dimen/title_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/rk_txtcountvote_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:text="297"
+                            android:textColor="@color/yellow" />
+
+                        <ImageView
+                            android:id="@+id/rk_imglike1_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/rk_txtcountvote_id"
+                            android:src="@drawable/icon_heart" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- column 2 -->
+
+            <LinearLayout
+                android:id="@+id/rk_ll_top2_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/backround_retangle"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rk_rl_icontop2_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/rk_icon_artist_2_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/artist_temp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/shadow_top" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/circle_2" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="2"
+                            android:textSize="@dimen/text_size" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rk_row2_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/rk_icon_artist_2_id" >
+                        <TextView
+                            android:id="@+id/txt_1id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/fan_ranking"
+                            android:textSize="@dimen/title_size" />
+
+                        <com.acv.cheerz.view.RoundImageView
+                            android:id="@+id/rk_iconfan21_id"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_toRightOf="@+id/txt_1id"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/artist_temp"
+                            android:layout_marginLeft="20dp"
+                            >
+                        </com.acv.cheerz.view.RoundImageView>
+                        <com.acv.cheerz.view.RoundImageView
+                            android:id="@+id/rk_iconfan22_id"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_toRightOf="@+id/rk_iconfan21_id"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/artist_temp"
+                            >
+                        </com.acv.cheerz.view.RoundImageView>
+                        <com.acv.cheerz.view.RoundImageView
+                            android:id="@+id/rk_iconfan23_id"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_toRightOf="@+id/rk_iconfan22_id"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/artist_temp"
+                            >
+                        </com.acv.cheerz.view.RoundImageView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_above="@+id/rk_row2_id"
+                        android:background="@drawable/shadow" >
+
+                        <TextView
+                            android:id="@+id/rk_txtName2_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:singleLine="true"
+                            android:text="はるはてのう"
+                            android:textColor="@color/ebe7ef"
+                            android:textSize="@dimen/title_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/rk_txtcountvote2_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:text="297"
+                            android:textColor="@color/yellow" />
+
+                        <ImageView
+                            android:id="@+id/rk_imglike2_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/rk_txtcountvote2_id"
+                            android:src="@drawable/icon_heart" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- row top2 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:id="@+id/rk_ll_top3_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/backround_retangle"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rk_rl_icontop3_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/rk_icon_artist_3_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/artist_temp" />
+
+                    <ImageView
+                        android:id="@+id/rk_img_shadow_top3_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/shadow_top" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/circle_3" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="3"
+                            android:textSize="@dimen/text_size" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rk_row3_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/rk_icon_artist_3_id" >
+                        <TextView
+                            android:id="@+id/txt_2id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/fan_ranking"
+                            android:textSize="@dimen/title_size" />
+
+                        <com.acv.cheerz.view.RoundImageView
+                            android:id="@+id/rk_iconfan31_id"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_toRightOf="@+id/txt_2id"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/artist_temp"
+                            android:layout_marginLeft="20dp"
+                            >
+                        </com.acv.cheerz.view.RoundImageView>
+                        <com.acv.cheerz.view.RoundImageView
+                            android:id="@+id/rk_iconfan32_id"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_toRightOf="@+id/rk_iconfan31_id"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/artist_temp"
+                            >
+                        </com.acv.cheerz.view.RoundImageView>
+                        <com.acv.cheerz.view.RoundImageView
+                            android:id="@+id/rk_iconfan33_id"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_toRightOf="@+id/rk_iconfan32_id"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/artist_temp"
+                            >
+                        </com.acv.cheerz.view.RoundImageView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_above="@+id/rk_row3_id"
+                        android:background="@drawable/shadow" >
+
+                        <TextView
+                            android:id="@+id/rk_txtName3_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:singleLine="true"
+                            android:text="はるはてのう"
+                            android:textColor="@color/ebe7ef"
+                            android:textSize="@dimen/title_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/rk_txtcountvote3_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:text="297"
+                            android:textColor="@color/yellow" />
+
+                        <ImageView
+                            android:id="@+id/rk_imglike3_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/rk_txtcountvote3_id"
+                            android:src="@drawable/icon_heart" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- column 2 -->
+
+            <LinearLayout
+                android:id="@+id/rk_ll_top4_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/backround_retangle"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rk_rl_icontop4_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/rk_icon_artist_4_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/artist_temp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/shadow_top" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/circle_4" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="4"
+                            android:textSize="@dimen/text_size" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rk_row4_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/rk_icon_artist_4_id" >
+                        <TextView
+                            android:id="@+id/txt_4id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/fan_ranking"
+                            android:textSize="@dimen/title_size" />
+
+                        <com.acv.cheerz.view.RoundImageView
+                            android:id="@+id/rk_iconfan41_id"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_toRightOf="@+id/txt_4id"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/artist_temp"
+                            android:layout_marginLeft="20dp"
+                            >
+                        </com.acv.cheerz.view.RoundImageView>
+                        <com.acv.cheerz.view.RoundImageView
+                            android:id="@+id/rk_iconfan42_id"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_toRightOf="@+id/rk_iconfan41_id"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/artist_temp"
+                            >
+                        </com.acv.cheerz.view.RoundImageView>
+                        <com.acv.cheerz.view.RoundImageView
+                            android:id="@+id/rk_iconfan43_id"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_toRightOf="@+id/rk_iconfan42_id"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/artist_temp"
+                            >
+                        </com.acv.cheerz.view.RoundImageView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_above="@+id/rk_row4_id"
+                        android:background="@drawable/shadow" >
+
+                        <TextView
+                            android:id="@+id/rk_txtName4_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:singleLine="true"
+                            android:text="はるはてのう"
+                            android:textColor="@color/ebe7ef"
+                            android:textSize="@dimen/title_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/rk_txtcountvote4_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:text="297"
+                            android:textColor="@color/yellow" />
+
+                        <ImageView
+                            android:id="@+id/rk_imglike4_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/rk_txtcountvote4_id"
+                            android:src="@drawable/icon_heart" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- list content bottom -->
+
+        <LinearLayout
+            android:id="@+id/rk_listview_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

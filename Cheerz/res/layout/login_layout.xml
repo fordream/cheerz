@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- com.acv.cheerz -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.acv.cheerz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <com.acv.cheerz.view.HeaderView
+        android:id="@+id/headerView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.acv.cheerz.view.HeaderView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_40dp"
+        android:paddingRight="@dimen/dimen_40dp" >
+
+        <com.acv.cheerz.customviews.charting.MTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:text="@string/email_adress"
+            android:textColor="#7b2f77"
+            android:textSize="@dimen/dimen_13dp"
+            custom:txtFont="KozGoPr6N_Light" />
+
+        <com.acv.cheerz.customviews.charting.MEditText
+            android:id="@+id/login_edt_email_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_34dp"
+            android:background="@drawable/login_edt"
+            android:gravity="center_vertical"
+            android:hint="@string/e_email_hint"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:singleLine="true"
+            android:text="truongvv101@gmail.com"
+            android:textColor="#818181"
+            android:textSize="@dimen/dimen_13dp"
+            custom:txtFont="KozGoPr6N_Light" />
+
+        <com.acv.cheerz.customviews.charting.MTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:text="@string/e_password"
+            android:textColor="#7b2f77"
+            android:textSize="@dimen/dimen_13dp"
+            custom:txtFont="KozGoPr6N_Light" />
+
+        <com.acv.cheerz.customviews.charting.MEditText
+            android:id="@+id/login_edt_pass_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_34dp"
+            android:background="@drawable/login_edt"
+            android:gravity="center_vertical"
+            android:hint="@string/e_pass_hint"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:password="true"
+            android:singleLine="true"
+            android:text="a12345678"
+            android:textColor="#818181"
+            android:textSize="@dimen/dimen_13dp"
+            custom:txtFont="KozGoPr6N_Light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30dp"
+            android:layout_marginBottom="@dimen/dimen_25dp"
+            android:layout_marginTop="@dimen/dimen_25dp"
+            android:gravity="center" >
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="@dimen/dimen_23dp"
+                android:layout_height="@dimen/dimen_23dp"
+                android:background="@drawable/xml_login_checked"
+                android:button="@drawable/transfer"
+                android:text="" />
+
+            <com.acv.cheerz.customviews.charting.MTextView
+                android:id="@+id/textcheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:text="@string/auto_login"
+                android:textColor="#818181"
+                android:gravity="center|left"
+                android:textSize="@dimen/dimen_13dp"
+                custom:txtFont="KozGoPr6N_Light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right" >
+
+                <!-- android:text="@string/forgotyoupassword" -->
+
+                <com.acv.cheerz.customviews.charting.MTextView
+                      android:id="@+id/forgotpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:textColor="#7b2f77"
+                    android:textSize="@dimen/dimen_13dp"
+                    custom:txtFont="KozGoPr6N_Light"
+                    custom:txtString="@string/forgotyoupassword" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.acv.cheerz.customviews.charting.MTextView
+            android:id="@+id/login_btn_confirm_id"
+            android:layout_width="@dimen/dimen_188dp"
+            android:layout_height="@dimen/dimen_37dp"
+            android:background="@drawable/login_btn"
+            android:gravity="center"
+            android:text="@string/e_login"
+            android:textColor="@color/ebe7ef"
+            android:textSize="@dimen/dimen_13dp"
+            custom:txtFont="KozGoPr6N_Light" />
+    </LinearLayout>
+
+</LinearLayout>

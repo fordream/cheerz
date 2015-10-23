@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_270dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_130dp"
+        android:background="@drawable/menuleft_header_bg" >
+
+        <RelativeLayout
+            android:id="@+id/menu_left_header_infor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_130dp"
+            android:padding="@dimen/dimen_10dp" >
+
+            <RelativeLayout
+                android:id="@+id/mx"
+                android:layout_width="@dimen/dimen_60dp"
+                android:layout_height="@dimen/dimen_60dp"
+                android:background="@drawable/icon_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_3dp" >
+
+                <com.acv.cheerz.view.CustomImageView
+                    android:id="@+id/icon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/avatar_example" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_3dp"
+                android:layout_toRightOf="@+id/mx"
+                android:orientation="vertical" >
+
+                <com.acv.cheerz.view.BaseTextBoldView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Level 1"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dimen_14dp"
+                    android:textStyle="bold" />
+
+                <com.acv.cheerz.view.BaseTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_2dp"
+                    android:layout_marginTop="@dimen/dimen_2dp"
+                    android:text="1cheer回復迄, あとーー：－－"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dimen_13dp" />
+
+                <com.acv.cheerz.view.BaseTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="次レベルまで、あと10cheer"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dimen_13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" >
+
+                <com.acv.cheerz.view.BaseTextBoldView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tuan Nguyen"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dimen_14dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.acv.cheerz.view.BaseTextView
+                        android:id="@+id/mxx"
+                        android:layout_width="@dimen/dimen_40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="11/15"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/dimen_10dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="@dimen/dimen_13dp"
+                        android:layout_height="@dimen/dimen_13dp"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/menu_left_hear" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar1"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dimen_4dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:layout_marginRight="@dimen/dimen_5dp"
+                        android:layout_toLeftOf="@+id/mxx"
+                        android:layout_toRightOf="@+id/imageView1"
+                        android:background="@drawable/progress_1"
+                        android:secondaryProgress="10" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/menu_left_header_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.acv.cheerz.view.BaseTextView
+                android:id="@+id/register"
+                android:layout_width="@dimen/dimen_225dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:background="@drawable/register"
+                android:gravity="center"
+                android:text="@string/register"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_13dp" />
+
+            <com.acv.cheerz.view.BaseTextView
+                android:id="@+id/login"
+                android:layout_width="@dimen/dimen_225dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:background="@drawable/login"
+                android:gravity="center"
+                android:text="@string/login"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_13dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:id="@+id/menuleftlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/transfer"
+        android:dividerHeight="0px"
+        android:listSelector="@drawable/transfer"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

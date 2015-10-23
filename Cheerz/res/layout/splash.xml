@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:custom="http://schemas.android.com/apk/res/com.acv.cheerz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<!-- 
+    <com.acv.cheerz.customviews.charting.MTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="@string/e_email"
+        android:textColor="@color/ebe7ef"
+        android:textSize="@dimen/dimen_13dp"
+        custom:txtFont="KozGoPr6N_Medium"/>
+ -->
+</LinearLayout>

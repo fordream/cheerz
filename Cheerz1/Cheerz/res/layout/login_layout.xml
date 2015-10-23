@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.acv.cheerz.view.HeaderView
+        android:id="@+id/headerView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.acv.cheerz.view.HeaderView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_ground" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_20dp" >
+
+                <com.acv.cheerz.view.CustomImageView
+                    android:id="@+id/login_img_id"
+                    android:layout_width="@dimen/dimen_150dp"
+                    android:layout_height="@dimen/dimen_150dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:background="@drawable/round_circle"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/e_email"
+                    android:textColor="@color/ebe7ef"
+                    android:textSize="@dimen/dimen_13dp" />
+
+                <EditText
+                    android:id="@+id/login_edt_email_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:background="@drawable/round_retangle"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="@string/e_email_hint"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/dimen_13dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/e_password"
+                    android:textColor="@color/ebe7ef"
+                    android:textSize="@dimen/dimen_13dp" />
+
+                <EditText
+                    android:id="@+id/login_edt_pass_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:background="@drawable/round_retangle"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="@string/e_pass_hint"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dimen_13dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/ebe7ef" />
+
+                <Button
+                    android:id="@+id/login_btn_confirm_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:background="@drawable/btn_register_click"
+                    android:gravity="center"
+                    android:text="@string/e_login"
+                    android:textColor="@color/ebe7ef"
+                    android:textSize="@dimen/dimen_13dp" />
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

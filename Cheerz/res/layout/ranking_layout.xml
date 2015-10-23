@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ranking_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ebe7ef" >
+
+    <com.acv.cheerz.view.HeaderView
+        android:id="@+id/headerView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.acv.cheerz.view.HeaderView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/headerView1"
+        android:layout_marginTop="10dp"
+        android:background="@color/ebe7ef" >
+
+        <View
+            android:id="@+id/view_center_id"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:id="@+id/rl_left_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            android:layout_toLeftOf="@+id/view_center_id" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" >
+
+                <TextView
+                    android:id="@+id/ranking_title_yesterday_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:singleLine="true"
+                    android:text="@string/yesterday"
+                    android:textColor="@color/bb328a"
+                     />
+
+                <ImageView
+                    android:id="@+id/ranking_imgprogress_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:src="@drawable/circle_progress"
+                    android:layout_below="@+id/ranking_title_yesterday_id"
+                    android:layout_alignParentBottom="true"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp" >
+
+                <TextView
+                    android:id="@+id/ranking_title_today_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/today"
+                    android:textColor="@color/bb328a"
+                     />
+                 <ImageView
+                    android:id="@+id/ranking_imgprogress_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:src="@drawable/circle_progress"
+                    android:layout_below="@+id/ranking_title_today_id"
+                    android:layout_alignParentBottom="true"
+                     />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_right_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="35dp"
+            android:layout_toRightOf="@+id/view_center_id" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" >
+
+                <TextView
+                    android:id="@+id/ranking_title_lastmonth_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/lastmonth"
+                    android:textColor="@color/bb328a"
+                     />
+                <ImageView
+                    android:id="@+id/ranking_imgprogress_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:src="@drawable/circle_progress"
+                    android:layout_below="@+id/ranking_title_lastmonth_id"
+                    android:layout_alignParentBottom="true"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/ranking_title_thismonth_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/thismonth"
+                    android:textColor="@color/bb328a"
+                     />
+                 <ImageView
+                    android:id="@+id/ranking_imgprogress_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:src="@drawable/circle_progress"
+                    android:layout_below="@+id/ranking_title_thismonth_id"
+                    android:layout_alignParentBottom="true"
+                     />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/line" />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ranking_title_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/headerView1"
+        android:background="@color/ebe7ef"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ranking_progressview_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ranking_title_id"
+        android:visibility="invisible" >
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ranking_viewpager_id"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ranking_progressview_id"
+        android:layout_marginTop="10dp"
+        android:background="@color/ebe7ef" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

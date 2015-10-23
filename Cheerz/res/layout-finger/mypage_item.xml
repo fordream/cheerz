@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_mypage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dimen_3dp"
+    android:paddingRight="@dimen/dimen_3dp"
+    android:paddingTop="@dimen/dimen_6dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_item"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_2dp" >
+
+        <RelativeLayout
+            android:id="@+id/home_item_bot_img_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.etsy.android.grid.util.DynamicHeightImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_1dp"
+                android:layout_marginRight="@dimen/dimen_1dp"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/dimen_0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/noimage" />
+
+            <LinearLayout
+                android:id="@+id/kdx"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_below="@+id/imageView1"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_5dp" >
+
+                    <com.acv.cheerz.view.BaseTextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/kx"
+                        android:text="はるはてのう"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/dimen_10dp" />
+
+                    <LinearLayout
+                        android:id="@+id/kx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen_13dp"
+                            android:layout_height="@dimen/dimen_13dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dimen_3dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/menu_left_hear" />
+
+                        <com.acv.cheerz.view.BaseTextView
+                            android:id="@+id/tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="815"
+                            android:textColor="#ffff66"
+                            android:textSize="@dimen/dimen_10dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimen_8dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+
+            <!-- <ImageView
+                android:id="@+id/like"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dimen_10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/favorite_like" /> -->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen_5dp"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:paddingRight="@dimen/dimen_5dp" >
+
+            <com.acv.cheerz.view.BaseTextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2hrs Edited"
+                android:textColor="#663366"
+                android:textSize="@dimen/dimen_10dp" />
+
+            <com.acv.cheerz.view.BaseTextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_3dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/dimen_3dp"
+                android:maxLines="2"
+                android:text="これは今依然としていわゆる記憶共という。。。これは今依然としていわゆる記憶共という。。。これは今依然としていわゆる記憶共という。。。"
+                android:textColor="#663366"
+                android:textSize="@dimen/dimen_13dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

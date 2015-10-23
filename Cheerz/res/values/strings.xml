@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cheerz</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="loading">Loading ...</string>
+    <string name="loading_0">Loading </string>
+    <string name="loading_1">Loading .</string>
+    <string name="loading_2">Loading ..</string>
+    <string name="loading_3">Loading ...</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="activities_log">My Page</string>
+    <string name="earn_points">Earn Points</string>
+    <string name="logout">Logout</string>
+    <string name="artists">Artists</string>
+    <string name="ranking">Ranking</string>
+    <string name="setting">Setting</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="favorite">Favorite</string>
+
+    <color name="ebe7ef">#ebe7ef</color>
+    <color name="bb328a">#bb328a</color>
+    <color name="yellow">#ffe66c</color>
+    <color name="green">#0075a3</color>
+    <color name="Blue">#2980b9</color>
+    <color name="White">#ffffff</color>
+    <color name="Black">#000000</color>
+    <color name="Gray">#c9c9c9</color>
+    <color name="GrayLight">#eeeeee</color>
+    <color name="GrayHot">#272727</color>
+    <color name="colorhint_title">#ce97b7</color>
+
+    <!-- login,register -->
+    <string name="e_name">Name</string>
+    <string name="e_email">Email</string>
+    <string name="e_password">Password</string>
+    <string name="e_password_confirm">Password confirm</string>
+    <string name="e_name_hint">Enter your name here</string>
+    <string name="e_email_hint">Enter your email here</string>
+    <string name="e_pass_hint">Enter your password here</string>
+    <string name="e_pass_confirm_hint">Enter your password confirm here</string>
+    <string name="e_register">REGISTER</string>
+    <string name="e_login">LOGIN</string>
+    <string name="settinga">SETTING</string>
+
+    <string-array name="settings">
+        <item>Follow cheez idol</item>
+        <item>Special thanks</item>
+        <item>Notification setting</item>
+        <item>License . privacy</item>
+        <item>Withdraw</item>
+    </string-array>
+
+    <string name="notification_setting_1">Notify when all my cheez are restored</string>
+    <string name="notification_setting_2">Notify if I have not open the app for a number of days</string>
+    <string name="notification_setting_3">Notify if a new idol registered</string>
+    <string name="notification_setting_4">Notify if my favorite idol updates</string>
+
+    <string-array name="notification_setting">
+        <item>@string/notification_setting_1</item>
+        <item>@string/notification_setting_2</item>
+        <item>@string/notification_setting_3</item>
+        <item>@string/notification_setting_4</item>
+    </string-array>
+
+    <string name="weberror">Không thể mở webrowser.</string>
+    <string name="videoerror">Không thể chạy video.</string>
+    <string name="ok">Đồng ý</string>
+    <string name="notificationa">NOTIFICATION</string>
+
+    <!-- earn point -->
+    <string name="earn_100">BUY 100Pt(200JPY)     </string>
+    <string name="earn_250">BUY 250Pt(500JPY)</string>
+    <string name="earn_500">BUY 500Pt(1000JPY)</string>
+    <string name="earn_1000">BUY 1000Pt(2000JPY)</string>
+    <string name="earn_2500">BUY 2500Pt(5000JPY)</string>
+    <string name="earn_4900">BUY 4900Pt(9800JPY)</string>
+    <string name="policy">Privacy plolicy</string>
+    <string name="error_connect_server">Bạn cần kiểm tra lại kết nối internet.</string>
+    <string name="search">Search</string>
+
+    <!-- ranking -->
+    <string name="yesterday">  YESTERDAY  </string>
+    <string name="today">  TODAY  </string>
+    <string name="lastmonth">  LAST MONTH  </string>
+    <string name="thismonth">  THIS MONTH  </string>
+    <string name="fan_ranking">FAN RANKING</string>
+    <string name="detail_artist">ARTIST</string>
+    <!-- detail artist -->
+    <string name="name">Name</string>
+    <string name="birdthday">Birdthday:</string>
+    <string name="hometown">Hometown:</string>
+    <string name="nickname">Nickname:</string>
+    <string name="favorite_color">Favorite color:</string>
+    <string name="characteristic:">Characteristic</string>
+    <string name="facebook">Facebook</string>
+    <string name="comment">To post and comment, you need a GetSatisfaction user account. By click "I agree" 
+        you allows us share your email address and your profile name to create your account</string>
+    <string name="cheerz_term">file:///android_asset/cheerz-term/cheerz-term.html</string>
+    <string name="email_adress">Email adress</string>
+    <string name="auto_login">Auto login</string>
+    <string name="forgotyoupassword">Forgot your password?</string>
+    <string name="forgotpassword">FORGOT PASSWORD</string>
+    <string name="send">SEND</string>
+
+</resources>

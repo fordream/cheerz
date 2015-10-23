@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/earn_background" >
+
+    <com.acv.cheerz.view.HeaderView
+        android:id="@+id/headerView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.acv.cheerz.view.HeaderView>
+
+    <ScrollView
+        android:id="@+id/earn_scrollview_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerView1"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:gravity="center_horizontal"
+            android:background="@drawable/earn_background"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/earn_txtpoint_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your point now: 200 pt"
+                android:layout_marginTop="35dp"
+                android:textColor="@color/bb328a"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/earn_100_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/btn_earn_point_click"
+                android:text="@string/earn_100"
+                android:textAlignment="center"
+                android:textColor="@color/ebe7ef"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/earn_250_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_earn_point_click"
+                android:text="@string/earn_250"
+                android:textAlignment="center"
+                android:textColor="@color/ebe7ef"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/earn_500_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_earn_point_click"
+                android:text="@string/earn_500"
+                android:textAlignment="center"
+                android:textColor="@color/ebe7ef"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/earn_1000_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_earn_point_click"
+                android:text="@string/earn_1000"
+                android:textAlignment="center"
+                android:textColor="@color/ebe7ef"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/earn_2500_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_earn_point_click"
+                android:text="@string/earn_2500"
+                android:textAlignment="center"
+                android:textColor="@color/ebe7ef"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/earn_4900_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_earn_point_click"
+                android:text="@string/earn_4900"
+                android:textAlignment="center"
+                android:textColor="@color/ebe7ef"
+                android:textSize="@dimen/text_size" />
+            
+        </LinearLayout>
+        
+    </ScrollView>
+ 	<TextView
+        android:id="@+id/earn_txtpolicy_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/earn_scrollview_id"
+        android:text="@string/policy"
+        android:textColor="@color/bb328a"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        />
+   
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ranking_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ebe7ef"
+     >
+
+    <com.acv.cheerz.view.HeaderView
+        android:id="@+id/headerView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.acv.cheerz.view.HeaderView>
+
+    <LinearLayout
+        android:id="@+id/ranking_title_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/headerView1"
+        android:background="@color/ebe7ef"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <TextView
+            android:id="@+id/ranking_title_yesterday_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:text="@string/yesterday"
+            android:textColor="@color/bb328a"
+            android:textSize="@dimen/title_size" />
+
+        <TextView
+            android:id="@+id/ranking_title_today_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="@string/today"
+            android:textColor="@color/bb328a"
+            android:textSize="@dimen/title_size" />
+
+        <TextView
+            android:id="@+id/ranking_title_lastmonth_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="@string/lastmonth"
+            android:textColor="@color/bb328a"
+            android:textSize="@dimen/title_size" />
+
+        <TextView
+            android:id="@+id/ranking_title_thismonth_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="@string/thismonth"
+            android:textColor="@color/bb328a"
+            android:textSize="@dimen/title_size" />
+    </LinearLayout>
+    <RelativeLayout 
+        android:id="@+id/ranking_progressview_id"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/ranking_title_id"
+        >
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line"
+            android:layout_centerVertical="true"
+            />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+            <ImageView 
+                android:id="@+id/ranking_imgprogress_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/circle_progress"
+                android:layout_weight="1"
+                />
+            <ImageView 
+                android:id="@+id/ranking_imgprogress_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/circle_progress"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                />
+            <ImageView 
+                android:id="@+id/ranking_imgprogress_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/circle_progress"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                />
+            <ImageView 
+                android:id="@+id/ranking_imgprogress_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/circle_progress"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+		</RelativeLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ranking_viewpager_id"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ranking_progressview_id"
+        android:background="@color/ebe7ef"
+        android:layout_marginTop="10dp"
+         >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

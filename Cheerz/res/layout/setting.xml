@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.acv.cheerz.view.HeaderView
+            android:id="@+id/headerView1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp" >
+        </com.acv.cheerz.view.HeaderView>
+
+        <com.acv.cheerz.view.CheerzListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/transfer"
+            android:dividerHeight="0px"
+            android:listSelector="@drawable/transfer"
+            android:scrollbars="none" >
+        </com.acv.cheerz.view.CheerzListView>
+    </LinearLayout>
+
+    <com.acv.cheerz.view.BaseTextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="はるはてのう"
+        android:textColor="#cc3399"
+        android:textSize="@dimen/dimen_15dp" />
+
+</RelativeLayout>
